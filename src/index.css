@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.case {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    margin-right: -1px;
+    margin-top: -1px;
+    font-weight: bold;
+}
+
+#game {
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+#game .demineur-row {
+    display: flex;
+}
+
+#game .close {
+    background: #7dcbff;
+}
+
+#game .close:active {
+    background: #338ac4;
+}
+
+#game .boom {
+    background: #ed6464;
+}
+
+#game .flag {
+    background: #ebe07a;
+}
+
+#game .false-flag {
+    background: #3e3e3e;
+}
+
+#game .false-flag span, .none {
+    display: none;
+}
+
+#game .flag::after, #game .false-flag::after {
+    content: "🚩";
+}
+
+#game #victoire {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game #perdu {
+    color: #b30000;
+    border: 2px #b30000 solid;
+    background: #f79c9c;
+}
+
+#game #gagne {
+    color: #00b31b;
+    border: 2px #00b31b solid;
+    background: #92fca2;
+}
+
+#game #gagne, #game #perdu {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 32px;
+    padding: 20px 40px;
+}
+
+#game .case.un {
+    color: #00a4c4;
+}
+
+#game .case.deux {
+    color: #55852c;
+}
+
+#game .case.trois {
+    color: #d4226f;
+}
+
+#game .case.quatre {
+    color: #2910a3;
+}
+
+#game .case.cinq {
+    color: #851400;
+}
+
+#game .case.six {
+    color: #32a852;
+}
+
+#game .case.sept {
+    color: #8f00d6;
+}
+
+#game .case.huit {
+    color: #d68b00;
+}
